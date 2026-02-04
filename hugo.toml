@@ -1,0 +1,117 @@
+baseURL = 'https://Zyed816.github.io/'
+title = 'Zyed'
+theme = 'coder' 
+languageCode = 'zh-CN'
+defaultcontentlanguage = "zh"
+defaultContentLanguageInSubdir = false
+
+[pagination]
+pagerSize = 20
+
+[services]
+#[services.disqus]
+#shortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[markup.goldmark]
+  [markup.goldmark.extensions]
+    [markup.goldmark.extensions.passthrough]
+      enable = true
+      [markup.goldmark.extensions.passthrough.delimiters]
+        block = [['$$', '$$'], ['\\[', '\\]']]
+        inline = [['$', '$'], ['\\(', '\\)']]
+
+[languages.zh]
+  languageName = "中文"
+  languageCode = "zh-cn"
+  contentDir = "content/zh"
+  weight = 1
+  title = "Zyed"
+  description = "Zyed 的个人网站"
+  keywords = "博客,开发者,个人"
+  
+  [[languages.zh.menu.main]]
+    name = "博客"
+    weight = 1
+    url  = "posts/"
+  [[languages.zh.menu.main]]
+    name = "关于"
+    weight = 2
+    url = "about/"
+
+[languages.en]
+  languageName = "English"
+  languageCode = "en-us"
+  contentDir = "content/en"
+  weight = 2
+  title = "Zyed"
+  description = "Zyed's personal website"
+  keywords = "blog,developer,personal"
+
+  [[languages.en.menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "posts/"
+  [[languages.en.menu.main]]
+    name = "About"
+    weight = 2
+    url = "about/"
+
+[params]
+  author = "Zyed"
+  description = "Zyed's personal website"
+  keywords = "blog,developer,personal"
+  avatarurl = "images/avatar.jpg"
+
+  # Enable KaTeX math rendering (handled by theme partial `posts/math.html`)
+  math = true
+
+  faviconSVG = "/images/favicon.svg"
+  favicon_32 = "/images/favicon-32x32.png"
+  favicon_16 = "/images/favicon-16x16.png"
+
+  since = 2019
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+  [languages.zh.params]
+  info = "C++ & 算法 小白"
+  [languages.en.params]
+  info = "C++ & Algorithm beginner"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/Zyed816"
+[[params.social]]
+  name = "LeetCode"
+  icon = "fa-solid fa-laptop-code fa-2x"
+  weight = 2
+  url = "https://leetcode.cn/u/interesting-grothendieckdjw/"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"

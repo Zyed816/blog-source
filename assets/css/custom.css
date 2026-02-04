@@ -1,0 +1,102 @@
+/* 强制覆盖主题默认字体 */
+/* 注意：不要全局覆盖 span 的字体，否则会影响 KaTeX 内部的 span，导致数学符号缺失/变形 */
+body, h1, h2, h3, h4, h5, h6, p, a, li {
+    font-family: 
+        /* 优先使用主题原有的英文字体 (保持西文美观) */
+        'Lato', 'Helvetica Neue', Helvetica, 
+        /* 接下来是中文字体 */
+        'PingFang SC',          /* macOS/iOS 优先 */
+        'Hiragino Sans GB',     /* macOS 备选 */
+        'Microsoft YaHei UI',   /* Windows UI 字体更适合界面 */
+        'Microsoft YaHei',      /* Windows 优先 (微软雅黑) */
+        'STHeiti',              /* 旧版 Mac */
+        'WenQuanYi Micro Hei',  /* Linux */
+        sans-serif;             /* 最终兜底 */
+}
+
+/*
+ * 主题对导航栏使用了更高优先级的选择器：.navigation a / .navigation span。
+ * 上面的通用 a/span 规则不会覆盖它，所以需要更具体的覆盖规则。
+ */
+.navigation a,
+.navigation span {
+    font-family:
+        'Lato', 'Helvetica Neue', Helvetica,
+        'PingFang SC', 'Hiragino Sans GB',
+        'Microsoft YaHei UI', 'Microsoft YaHei',
+        'WenQuanYi Micro Hei',
+        sans-serif;
+    font-weight: 700;
+    /* 用 text-shadow 做“加粗”观感（比描边更柔和，兼容性也更好） */
+    text-shadow:
+        0.25px 0 currentColor,
+        -0.25px 0 currentColor;
+    letter-spacing: 0;
+}
+
+/*
+ * 文章列表页（/posts/）日期与标题上下不齐：
+ * 主题在桌面端把每个 li 设为 display:flex，但没设置 align-items，默认 stretch 可能导致文字基线看起来不齐。
+ */
+@media only screen and (min-width: 768.1px) {
+    .list ul:not(.pagination) li {
+        align-items: baseline;
+    }
+}
+
+.list ul li .date,
+.list ul li .title {
+    line-height: 1.6;
+}
+
+/* KaTeX math styling (theme loads KaTeX when `params.math = true`) */
+.katex {
+    font-size: 1.05em;
+}
+
+/* Restore KaTeX's own fonts in case other global rules leak in */
+.katex,
+.katex * {
+    font-family: KaTeX_Main, KaTeX_Math, serif !important;
+}
+
+.katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.25rem 0;
+}
+
+.katex-display > .katex {
+    max-width: 100%;
+}
+
+/* Keep KaTeX aligned with text baseline */
+.katex .base {
+    line-height: 1.3;
+}
+
+/* Blockquote: left-aligned but still visually distinct */
+.post-content blockquote {
+    --quote-pad: 1rem;
+    margin: 1.6rem 0;
+    /* Cancel the left padding so quoted text aligns with normal paragraphs */
+    margin-left: calc(-1 * var(--quote-pad));
+    padding: 0.9rem 1rem 0.9rem var(--quote-pad);
+
+    border-left: 3px solid rgba(0, 0, 0, 0.18);
+    background-color: rgba(0, 0, 0, 0.035);
+    border-radius: 0.6rem;
+}
+
+body.colorscheme-dark .post-content blockquote {
+    border-left-color: rgba(255, 255, 255, 0.18);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.post-content blockquote > :first-child {
+    margin-top: 0;
+}
+
+.post-content blockquote > :last-child {
+    margin-bottom: 0;
+}
