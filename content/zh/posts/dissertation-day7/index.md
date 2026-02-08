@@ -11,6 +11,8 @@ externalLink = ""
 series = []
 +++
 
+# [毕业设计]Day7
+
 ## 数据加载模块 $\text{dataset.py}$
 
 ```python
@@ -297,7 +299,7 @@ class GRACE(torch.nn.Module):
 
 命令：
 
-```
+```bash
 & D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model GRACE --dataset Cora --senario ID --gpu_id 0 --seed 39788
 ```
 
@@ -337,7 +339,7 @@ correspoding test acc: 83.8503% ± 0.693698%
 
 命令：
 
-```
+```bash
 & D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model GRACE --dataset Cora --senario ID --gpu_id 0 --seed 39788 --theroy_view --start_debias_epoch 200 --update_interval 1 --B_W_threshold 0.6 --R_W_threshold 0.6 --norm_sim_matrix global --stay_diag_eye 1
 ```
 
@@ -485,8 +487,8 @@ def drop_feature_weighted_2(x: torch.Tensor, feature_weight: torch.Tensor, p: fl
 
  命令
 
-```
-& D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model GRACE --dataset Cora --senario ID --gpu_id 0 --seed 39788
+```bash
+& D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model GCA --dataset Cora --senario ID --gpu_id 0 --seed 39788 --theroy_view
 ```
 
 结果
@@ -525,7 +527,7 @@ correspoding test acc: 75.7755% ± 1.330761%
 
 命令
 
-```
+```bash
 & D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model GCA --dataset Cora --senario ID --gpu_id 0 --seed 39788 --drop_scheme degree --theroy_view --start_debias_epoch 100 --update_interval 20 --B_W_threshold 0.6 --R_W_threshold 0.6 --norm_sim_matrix global --stay_diag_eye 1
 ```
 
@@ -579,7 +581,7 @@ from typing import Optional
 
 命令
 
-```
+```bash
 & D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model DGI --dataset Cora --senario ID --gpu_id 0 --seed 39788 --gradient_drop_threshold 1e-4
 ```
 
@@ -607,7 +609,7 @@ correspoding test acc: 84.2688% ± 0.422118%
 
 命令
 
-```
+```bash
 & D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model COSTA --dataset Cora --senario ID --gpu_id 0 --seed 39788
 ```
 
@@ -667,15 +669,15 @@ correspoding test acc: 78.9513% ± 0.783933%
 
 修改 `pre_train.py` $\text{line 219}$
 
-![image-20260207220903408](C:\Users\wrj\AppData\Roaming\Typora\typora-user-images\image-20260207220903408.png)
+![屏幕截图 2026-02-07 220830](屏幕截图 2026-02-07 220830.png)
 
 修改 `pre_train.py` $\text{line 239-245}$ 
 
-![image-20260207221043129](C:\Users\wrj\AppData\Roaming\Typora\typora-user-images\image-20260207221043129.png)
+![屏幕截图 2026-02-07 221024](屏幕截图 2026-02-07 221024.png)
 
 命令
 
-```
+```bash
 & D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model MVGRL --dataset Cora --senario ID --gpu_id 0 --seed 39788 --learning_rate 0.001 --gradient_drop_threshold 1e-5 --tolerance_epoch_num 20 --mvgrl_alpha 0.2
 ```
 
@@ -705,7 +707,7 @@ correspoding test acc: 82.6686% ± 0.560306%
 
 命令
 
-```
+```bash
 & D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model GBT --dataset Cora --senario ID --gpu_id 0 --seed 39788 --weight_decay 0 --num_hidden 512 --batch_size 4 --p_x 0.1 --p_e 0.4 --gradient_drop_threshold 1e-3
 ```
 
