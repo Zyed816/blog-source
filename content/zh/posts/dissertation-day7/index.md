@@ -11,8 +11,6 @@ externalLink = ""
 series = []
 +++
 
-# [毕业设计]Day7
-
 ## 数据加载模块 $\text{dataset.py}$
 
 ```python
@@ -488,7 +486,7 @@ def drop_feature_weighted_2(x: torch.Tensor, feature_weight: torch.Tensor, p: fl
  命令
 
 ```bash
-& D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model GCA --dataset Cora --senario ID --gpu_id 0 --seed 39788 --theroy_view
+& D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model GCA --dataset Cora --senario ID --gpu_id 0 --seed 39788
 ```
 
 结果
@@ -506,7 +504,7 @@ drop_feature_rate_1: 0.3
 drop_feature_rate_2: 0.4
 drop_scheme: degree
 best val acc: 77.7368% ± 0.761963%
-correspoding test acc: 75.7755% ± 1.210565%
+correspoding test acc: 75.7509% ± 1.239263%
 
 Seed: 666
 Dataset: Cora
@@ -519,8 +517,8 @@ drop_edge_rate_2: 0.4
 drop_feature_rate_1: 0.3
 drop_feature_rate_2: 0.4
 drop_scheme: degree
-best val acc: 78.6593% ± 1.322621%
-correspoding test acc: 75.7755% ± 1.330761%
+best val acc: 78.9053% ± 1.055412%
+correspoding test acc: 76.0217% ± 1.002426%
 ```
 
 ####  $\text{IFL-GC}$
@@ -633,13 +631,11 @@ best val acc: 85.3014% ± 0.156796%
 correspoding test acc: 84.6135% ± 0.853517%
 ```
 
-
-
 ####  $\text{BGRL}$ 
 
 命令
 
-```
+```bash
 & D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model BGRL --dataset Cora --senario ID --gpu_id 0 --seed 39788 --gradient_drop_threshold 1e-4
 ```
 
@@ -669,11 +665,11 @@ correspoding test acc: 78.9513% ± 0.783933%
 
 修改 `pre_train.py` $\text{line 219}$
 
-![屏幕截图 2026-02-07 220830](屏幕截图 2026-02-07 220830.png)
+![屏幕截图 2026-02-07 220830](D:\dissertation\dailyRecord\figures\屏幕截图 2026-02-07 220830.png)
 
 修改 `pre_train.py` $\text{line 239-245}$ 
 
-![屏幕截图 2026-02-07 221024](屏幕截图 2026-02-07 221024.png)
+![屏幕截图 2026-02-07 221024](D:\dissertation\dailyRecord\figures\屏幕截图 2026-02-07 221024.png)
 
 命令
 
@@ -700,8 +696,6 @@ Repeat_times: 3
 best val acc: 84.6556% ± 0.980159%
 correspoding test acc: 82.6686% ± 0.560306%
 ```
-
-
 
 ####  $\text{GBT}$
 
