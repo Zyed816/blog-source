@@ -72,16 +72,29 @@ correspoding test acc: 84.0619% ± 0.299100%
 命令
 
 ```bash
-python main.py --model GRACE --dataset PubMed --senario ID --gpu_id 0 --seed 39788 --theroy_view --start_debias_epoch 200 --update_interval 1 --B_W_threshold 0.6 --R_W_threshold 0.6 --norm_sim_matrix global --stay_diag_eye 1
+python main.py --model GRACE --dataset PubMed --senario ID --gpu_id 0 --seed 39788 --theroy_view --start_debias_epoch 200 --update_interval 1 --B_W_threshold 0.6 --R_W_threshold 0.6 --norm_sim_matrix global --stay_diag_eye 1 --batch_size 4096
 ```
 
-结果：再次爆显存
+结果：
 
 ```
-
+Seed: 39788
+Dataset: PubMed
+Model: GRACE
+Num_epochs: 500
+Repeat_times: 3
+tau: 0.4
+drop_edge_rate_1: 0.2
+drop_edge_rate_2: 0.4
+drop_feature_rate_1: 0.3
+drop_feature_rate_2: 0.4
+start_debias_epoch: 200
+update_interval: 1
+R_W_threshold: 0.6
+B_W_threshold: 0.6
+best val acc: 84.7471% ± 0.519791%
+correspoding test acc: 84.1329% ± 0.285970%
 ```
-
-
 
 ###  $\text{GCA}$
 
@@ -114,13 +127,29 @@ correspoding test acc: 83.5649% ± 0.154123%
 命令
 
 ```bash
-& D:/SoftWare/anaconda/envs/GCL/python.exe main.py --model GCA --dataset PubMed --senario ID --gpu_id 0 --seed 39788 --drop_scheme degree --theroy_view --start_debias_epoch 100 --update_interval 20 --B_W_threshold 0.6 --R_W_threshold 0.6 --norm_sim_matrix global --stay_diag_eye 1
+python main.py --model GCA --dataset PubMed --senario ID --gpu_id 0 --seed 39788 --drop_scheme degree --theroy_view --start_debias_epoch 100 --update_interval 20 --B_W_threshold 0.6 --R_W_threshold 0.6 --norm_sim_matrix global --stay_diag_eye 1 --batch_size 4096
 ```
 
-结果：爆显存
+结果
 
 ```
-
+Seed: 39788
+Dataset: PubMed
+Model: GCA
+Num_epochs: 500
+Repeat_times: 3
+tau: 0.4
+drop_edge_rate_1: 0.2
+drop_edge_rate_2: 0.4
+drop_feature_rate_1: 0.3
+drop_feature_rate_2: 0.4
+drop_scheme: degree
+start_debias_epoch: 100
+update_interval: 20
+R_W_threshold: 0.6
+B_W_threshold: 0.6
+best val acc: 83.7834% ± 0.601778%
+correspoding test acc: 83.3485% ± 0.167351%
 ```
 
 ###   $\text{DGI}$
