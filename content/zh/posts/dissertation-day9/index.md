@@ -36,15 +36,15 @@ ModuleNotFoundError: No module named 'datasets.GOOD_twitch'
 
 1.在 $\text{GCL}$ 环境下运行命令 ``pip install git+https://github.com/divelab/GOOD.git``
 
-![屏幕截图 2026-02-10 125419](屏幕截图 2026-02-10 125419.png)
+![pic1](pic1.png)
 
 报错：
 
-![屏幕截图 2026-02-10 125447](屏幕截图 2026-02-10 125447.png)
+![pic2](pic2.png)
 
 运行 `pip install --no-deps git+https://github.com/divelab/GOOD.git` ，**跳过依赖安装，只装官方 GOOD 源码本体**
 
-![屏幕截图 2026-02-10 125708](屏幕截图 2026-02-10 125708.png)
+![pic3](pic3.png)
 
 2.在 $\text{datasets/}$ 下新建 `init.py` ，保持内容为空
 
@@ -89,11 +89,11 @@ Fix:
 
 在 $\text{GCL}$ 环境下运行 `import GOOD`
 
-![屏幕截图 2026-02-10 133829](屏幕截图 2026-02-10 133829.png)
+![pic4](pic4.png)
 
 发现缺少 `munch` 包，安装完成后又提示还有很多包没有安装
 
-![屏幕截图 2026-02-10 134250](屏幕截图 2026-02-10 134250.png)
+![pic5](pic5.png)
 
 在终端运行
 
@@ -263,7 +263,7 @@ class GOODTwitch(_OfficialGOODTwitch):
 
 1.执行命令
 
-```
+```bash
 source /etc/network_turbo
 
 pip install --no-deps git+https://github.com/divelab/GOOD.git
@@ -285,7 +285,7 @@ python main.py --model GRACE --dataset GOODTwitch --senario OOD --gpu_id 0 --bat
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: GOODTwitch
 Model: GRACE
@@ -312,7 +312,7 @@ python main.py --model GRACE --dataset GOODTwitch --senario OOD --gpu_id 0 --see
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: GOODTwitch
 Model: GRACE
@@ -742,7 +742,7 @@ corresponding test acc: 63.9048% ± 0.371229%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: GOODCBAS
 Model: GRACE

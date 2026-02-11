@@ -39,7 +39,7 @@ python main.py --model GRACE --dataset PubMed --senario ID --gpu_id 0 --seed 397
 
 结果：
 
-```
+```html
 Seed: 39788
 Dataset: PubMed
 Model: GRACE
@@ -77,7 +77,7 @@ python main.py --model GRACE --dataset PubMed --senario ID --gpu_id 0 --seed 397
 
 结果：
 
-```
+```html
 Seed: 39788
 Dataset: PubMed
 Model: GRACE
@@ -106,7 +106,7 @@ correspoding test acc: 84.1329% ± 0.285970%
 
 结果：
 
-```
+```html
 Seed: 39788
 Dataset: PubMed
 Model: GCA
@@ -132,7 +132,7 @@ python main.py --model GCA --dataset PubMed --senario ID --gpu_id 0 --seed 39788
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: PubMed
 Model: GCA
@@ -162,7 +162,7 @@ correspoding test acc: 83.3485% ± 0.167351%
 
 结果：
 
-```
+```html
 Seed: 39788
 Dataset: PubMed
 Model: DGI
@@ -181,7 +181,7 @@ correspoding test acc: 84.6671% ± 0.103549%
 
 结果：
 
-```
+```html
 Seed: 39788
 Dataset: PubMed
 Model: COSTA
@@ -201,7 +201,7 @@ correspoding test acc: 84.1093% ± 0.178073%
 
 结果：
 
-```
+```html
 Seed: 39788
 Dataset: PubMed
 Model: BGRL
@@ -221,7 +221,7 @@ correspoding test acc: 83.5920% ± 0.270945%
 
 结果：
 
-```
+```html
 Seed: 39788
 Dataset: PubMed
 Model: MVGRL
@@ -241,7 +241,7 @@ correspoding test acc: 84.5961% ± 0.189276%
 
 结果：
 
-```
+```html
 Seed: 39788
 Dataset: PubMed
 Model: GBT
@@ -264,7 +264,7 @@ correspoding test acc: 86.0364% ± 0.210547%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: CiteSeer
 Model: GRACE
@@ -302,7 +302,7 @@ correspoding test acc: 65.1442% ± 2.487042%
 
 结果
 
-```
+```html
 Dataset: CiteSeer
 Model: GRACE
 Num_epochs: 500
@@ -347,7 +347,7 @@ correspoding test acc: 67.2075% ± 0.455922%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: CiteSeer
 Model: GCA
@@ -373,7 +373,7 @@ correspoding test acc: 54.7276% ± 1.204258%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: CiteSeer
 Model: GCA
@@ -421,7 +421,7 @@ correspoding test acc: 56.9912% ± 0.381136%
 
 结果
 
-```
+```html
 Dataset: CiteSeer
 Model: DGI
 Num_epochs: 500
@@ -448,7 +448,7 @@ correspoding test acc: 66.1458% ± 0.242048%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: CiteSeer
 Model: COSTA
@@ -476,7 +476,7 @@ correspoding test acc: 67.1875% ± 0.868107%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: CiteSeer
 Model: BGRL
@@ -504,7 +504,7 @@ correspoding test acc: 59.8758% ± 1.743364%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: CiteSeer
 Model: MVGRL
@@ -532,7 +532,7 @@ correspoding test acc: 69.4511% ± 0.723376%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: CiteSeer
 Model: GBT
@@ -562,7 +562,7 @@ python main.py --model GRACE --dataset WikiCS --senario ID --gpu_id 0 --seed 397
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: WikiCS
 Model: GRACE
@@ -600,7 +600,7 @@ python main.py --model GRACE --dataset WikiCS --senario ID --gpu_id 0 --seed 397
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: WikiCS
 Model: GRACE
@@ -646,7 +646,7 @@ correspoding test acc: 77.6067% ± 0.521066%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: WikiCS
 Model: GCA
@@ -672,7 +672,7 @@ python main.py --model GCA --dataset WikiCS --senario ID --gpu_id 0 --seed 39788
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: WikiCS
 Model: GCA
@@ -702,7 +702,7 @@ python main.py --model DGI --dataset WikiCS --senario ID --gpu_id 0 --seed 39788
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: WikiCS
 Model: DGI
@@ -730,7 +730,7 @@ python main.py --model COSTA --dataset WikiCS --senario ID --gpu_id 0 --seed 397
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: WikiCS
 Model: COSTA
@@ -758,7 +758,7 @@ python main.py --model BGRL --dataset WikiCS --senario ID --gpu_id 0 --seed 3978
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: WikiCS
 Model: BGRL
@@ -786,7 +786,7 @@ python main.py --model MVGRL --dataset WikiCS --senario ID --gpu_id 0 --seed 397
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: WikiCS
 Model: MVGRL
@@ -806,7 +806,7 @@ python main.py --model GBT --dataset WikiCS --senario ID --gpu_id 0 --seed 39788
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: WikiCS
 Model: GBT
@@ -835,7 +835,7 @@ correspoding test acc: 79.3569% ± 0.819150%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Computers
 Model: GRACE
@@ -873,7 +873,7 @@ python main.py --model GRACE --dataset Computers --senario ID --gpu_id 0 --seed 
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Computers
 Model: GRACE
@@ -902,7 +902,7 @@ python main.py --model GCA --dataset Computers --senario ID --gpu_id 0 --seed 39
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Computers
 Model: GCA
@@ -928,7 +928,7 @@ python main.py --model GCA --dataset Computers --senario ID --gpu_id 0 --seed 39
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Computers
 Model: GCA
@@ -958,7 +958,7 @@ python main.py --model DGI --dataset Computers --senario ID --gpu_id 0 --seed 39
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Computers
 Model: DGI
@@ -986,7 +986,7 @@ python main.py --model COSTA --dataset Computers --senario ID --gpu_id 0 --seed 
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Computers
 Model: COSTA
@@ -1006,7 +1006,7 @@ python main.py --model BGRL --dataset Computers --senario ID --gpu_id 0 --seed 3
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Computers
 Model: BGRL
@@ -1027,7 +1027,7 @@ python main.py --model MVGRL --dataset Computers --senario ID --gpu_id 0 --seed 
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Computers
 Model: MVGRL
@@ -1047,7 +1047,7 @@ python main.py --model GBT --dataset Computers --senario ID --gpu_id 0 --seed 39
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Computers
 Model: GBT
@@ -1068,7 +1068,7 @@ correspoding test acc: 89.1507% ± 0.542735%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Photo
 Model: GRACE
@@ -1093,7 +1093,7 @@ correspoding test acc: 91.5294% ± 0.246178%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Photo
 Model: GRACE
@@ -1122,7 +1122,7 @@ correspoding test acc: 91.3028% ± 0.177744%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Photo
 Model: GCA
@@ -1148,7 +1148,7 @@ correspoding test acc: 91.7298% ± 0.312513%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Photo
 Model: GCA
@@ -1178,7 +1178,7 @@ correspoding test acc: 91.0850% ± 0.335484%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Photo
 Model: DGI
@@ -1198,7 +1198,7 @@ correspoding test acc: 91.6078% ± 0.314451%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Photo
 Model: COSTA
@@ -1218,7 +1218,7 @@ correspoding test acc: 91.7908% ± 0.133308%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Photo
 Model: BGRL
@@ -1238,7 +1238,7 @@ python main.py --model MVGRL --dataset Photo --senario ID --gpu_id 0 --seed 3978
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Photo
 Model: MVGRL
@@ -1258,7 +1258,7 @@ correspoding test acc: 89.6819% ± 0.121380%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Photo
 Model: GBT

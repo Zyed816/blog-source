@@ -303,7 +303,7 @@ class GRACE(torch.nn.Module):
 
 结果：
 
-```
+```html
 Seed: 39788
 Dataset: Cora
 Model: GRACE
@@ -343,7 +343,7 @@ correspoding test acc: 83.8503% ± 0.693698%
 
 结果：
 
-```
+```html
 Seed: 39788
 Dataset: Cora
 Model: GRACE
@@ -491,7 +491,7 @@ def drop_feature_weighted_2(x: torch.Tensor, feature_weight: torch.Tensor, p: fl
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Cora
 Model: GCA
@@ -531,7 +531,7 @@ correspoding test acc: 76.0217% ± 1.002426%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Cora
 Model: GCA
@@ -585,7 +585,7 @@ from typing import Optional
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Cora
 Model: DGI
@@ -613,7 +613,7 @@ correspoding test acc: 84.2688% ± 0.422118%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Cora
 Model: COSTA
@@ -641,7 +641,7 @@ correspoding test acc: 84.6135% ± 0.853517%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Cora
 Model: BGRL
@@ -665,11 +665,11 @@ correspoding test acc: 78.9513% ± 0.783933%
 
 修改 `pre_train.py` $\text{line 219}$
 
-![屏幕截图 2026-02-07 220830](D:\dissertation\dailyRecord\figures\屏幕截图 2026-02-07 220830.png)
+![pic2](pic2.png)
 
 修改 `pre_train.py` $\text{line 239-245}$ 
 
-![屏幕截图 2026-02-07 221024](D:\dissertation\dailyRecord\figures\屏幕截图 2026-02-07 221024.png)
+![pic1](pic1.png)
 
 命令
 
@@ -679,7 +679,7 @@ correspoding test acc: 78.9513% ± 0.783933%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Cora
 Model: MVGRL
@@ -707,7 +707,7 @@ correspoding test acc: 82.6686% ± 0.560306%
 
 结果
 
-```
+```html
 Seed: 39788
 Dataset: Cora
 Model: GBT
