@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2026-02-05T21:31:00+08:00
-title = "[breakpoint]丑数"
+title = "[Breakpoint]丑数"
 description = ""
 slug = "breakpoint-uglyNumber"
 authors = []

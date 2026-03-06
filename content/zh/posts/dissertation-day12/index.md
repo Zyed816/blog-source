@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2026-03-6T20:26:00+08:00
+date = 2026-03-06T20:26:00+08:00
 title = "[毕业设计]Day12"
 description = ""
 slug = "dissertation-day12"
