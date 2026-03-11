@@ -6,7 +6,7 @@ defaultcontentlanguage = "zh"
 defaultContentLanguageInSubdir = false
 
 [pagination]
-pagerSize = 20
+pagerSize = 10
 
 [services]
 #[services.disqus]
