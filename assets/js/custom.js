@@ -49,9 +49,10 @@
       tocNav.appendChild(tocTitle);
 
       headings.forEach(function (h) {
+        if (!h.id) return;
         var link = document.createElement('a');
         link.href = '#' + h.id;
-        link.textContent = h.textContent;
+        link.textContent = h.textContent.trim();
         link.className = h.tagName === 'H3' ? 'toc-h3' : '';
         tocNav.appendChild(link);
       });
@@ -114,6 +115,13 @@
 
       copyBtn.addEventListener('click', function () {
         var code = pre.textContent;
+        if (!navigator.clipboard) {
+          copyBtn.textContent = 'Failed';
+          setTimeout(function () {
+            copyBtn.textContent = 'Copy';
+          }, 1500);
+          return;
+        }
         navigator.clipboard.writeText(code).then(function () {
           copyBtn.textContent = 'Copied!';
           copyBtn.classList.add('copied');
@@ -121,6 +129,11 @@
             copyBtn.textContent = 'Copy';
             copyBtn.classList.remove('copied');
           }, 2000);
+        }).catch(function () {
+          copyBtn.textContent = 'Failed';
+          setTimeout(function () {
+            copyBtn.textContent = 'Copy';
+          }, 1500);
         });
       });
 
