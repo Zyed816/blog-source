@@ -5,3 +5,11 @@
 <style>
   html { scroll-behavior: smooth; }
 </style>
+
+{{ if hugo.IsServer }}
+  {{ $js := resources.Get "js/custom.js" }}
+  <script defer src="{{ $js.RelPermalink }}"></script>
+{{ else }}
+  {{ $js := resources.Get "js/custom.js" | resources.Minify | resources.Fingerprint }}
+  <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
