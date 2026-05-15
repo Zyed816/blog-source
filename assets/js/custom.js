@@ -1,6 +1,27 @@
 (function () {
   'use strict';
 
+  // ── Navigation Hide on Scroll Down ─────────────────────────
+  var nav = document.querySelector('.navigation');
+  var lastScrollY = window.scrollY;
+  var navHidden = false;
+
+  function handleNavScroll() {
+    var currentScrollY = window.scrollY;
+    if (currentScrollY <= 60) {
+      nav.classList.remove('navigation-hidden');
+      navHidden = false;
+    } else if (currentScrollY > lastScrollY && !navHidden) {
+      nav.classList.add('navigation-hidden');
+      navHidden = true;
+    } else if (currentScrollY < lastScrollY && navHidden) {
+      nav.classList.remove('navigation-hidden');
+      navHidden = false;
+    }
+    lastScrollY = currentScrollY;
+  }
+  window.addEventListener('scroll', handleNavScroll, { passive: true });
+
   // ── Reading Progress Bar ──────────────────────────────────
   var progressBar = document.createElement('div');
   progressBar.id = 'reading-progress';

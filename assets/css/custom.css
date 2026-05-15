@@ -206,8 +206,10 @@ pre code {
 
 /* ===== Navigation (glassmorphism) ===== */
 .navigation {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
   background: rgba(var(--bg-rgb), 0.85);
   backdrop-filter: blur(12px);
@@ -215,6 +217,20 @@ pre code {
   border-bottom: 1px solid rgba(212, 135, 78, 0.15);
   height: auto;
   padding: 1.2rem 0;
+  transition: transform 0.3s ease;
+}
+.navigation-hidden {
+  transform: translateY(-100%);
+}
+
+/* Compensate for fixed nav */
+.wrapper {
+  padding-top: 5.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    padding-top: 4.8rem;
+  }
 }
 body.colorscheme-dark .navigation {
   background: rgba(var(--bg-rgb), 0.85);
