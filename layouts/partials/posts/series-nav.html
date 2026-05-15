@@ -1,0 +1,23 @@
+{{ if .Params.series }}
+  {{ range .Params.series }}
+    {{ $name := . | anchorize }}
+    {{ $series := index $.Site.Taxonomies.series $name }}
+    {{ if gt (len $series.Pages) 1 }}
+      <div class="series-nav">
+        <div class="series-label">{{ . }} 系列</div>
+        <div class="series-links">
+          {{ with $series.Pages.Prev $.Page }}
+            <a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>
+          {{ else }}
+            <span></span>
+          {{ end }}
+          {{ with $series.Pages.Next $.Page }}
+            <a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>
+          {{ else }}
+            <span></span>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+{{ end }}
