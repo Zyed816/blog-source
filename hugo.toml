@@ -80,8 +80,8 @@ style = "github-dark"
   hidecolorschemetoggle = false
 
   customCSS = ["css/custom.css"]
+  customJS = ["js/custom.js"]
   # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
 
   [languages.zh.params]
   info = "C++ & 算法 小白"
